@@ -1,0 +1,30 @@
+.container{
+    margin-top:70px;
+    width: 95%;
+}
+/* .panel{
+    width: 70%;
+} */
+
+.card-content{
+    float: left;
+    margin-left: 20px;
+}
+
+#userdata{
+    margin-left: 30px;
+}
+.img{
+    background-size: cover;
+}
+
+.button{
+    margin-top: 35px;
+}
+/* figcaption{
+    text-align: center;
+} */
+/* .btn{
+    margin-top: 30px;
+    margin-left: 33%;
+} */

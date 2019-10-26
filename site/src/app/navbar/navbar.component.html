@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Fitmecollections</title>
+  </head>
+  <body>
+    <header class="wells">
+      <div class="container">
+        <div id="branding">
+          <a routerLink="/home"><img src="../../assets/logo.gif" height="90px" width="200px"></a>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/mens">Mens</a></li>
+            <li><a routerLink="/aboutus">About</a></li>
+            <li *ngIf="isLogin"><a>Hello, {{useremail}}</a></li>
+          <li *ngIf="!isLogin"><a routerLink='' (click)="openModalWithComponent()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li *ngIf="isLogin"><a routerLink='' (click)="userService.logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          <li ><a routerLink="/cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span Class="badge badge-warning">{{cartlength}}</span></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

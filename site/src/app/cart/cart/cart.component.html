@@ -1,0 +1,38 @@
+<h2><b>Cart</b></h2>
+<!-- <app-navbar [cartlength]="cartLength"></app-navbar> -->
+<div class="container">
+    <div>
+      <div id="userdata">
+        <div class="alert alert-danger" *ngIf="cartMessage">
+          {{cartMessage}}
+        </div>
+        <div class="table-responsive">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                  <th>Product Name</th>
+                  <th>Product price</th>
+                  <th>Product image</th>
+                  <th></th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let k of cartData">
+              <tr>
+                <td>{{k.name}}</td>
+                  <td>{{k.price}}</td>  
+                 <td> <figure >  
+                      <img src="{{k.productImage}}" class=" img-circle" width="120px" height="120px" alt="Responsive image">
+                      <!-- <figcaption>{{k.name}}</figcaption> -->
+                  </figure></td>
+                  <button class=" btn btn-danger delete" (click)="deleteCart(k._id)">Delete</button>
+              </tr>
+            </tbody>
+          </table>
+            
+        </div>
+      </div>
+  </div>
+  
+  </div>
+  
+    

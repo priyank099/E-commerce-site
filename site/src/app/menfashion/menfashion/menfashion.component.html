@@ -1,0 +1,36 @@
+<div class="container">
+    <!-- <tabset>
+        <tab heading="Tshirts" id="tab1"> -->
+          <!--Tshirt--> 
+          <h2>T-shirts &gt;</h2>
+          <div class="sub-container" *ngFor="let m of storeTshirts ">
+            <a routerLink="/mens/{{m._id}}"> 
+              <img src="{{m.productImage}}" alt="Image" width="100%" height="200px">
+                <div class="card-content">
+                    <div><b>{{m.name}}</b></div> 
+                    <div>Rs.{{m.price}}</div>
+                    <!-- https://picsum.photos/200/300/?random -->
+                    <!-- <button class="btn btn-primary footer" (click)="addProductToCart(m._id)">Add to Cart</button> -->
+                </div>
+            </a>    
+          </div>
+</div>
+<div class="container">        
+        <!-- </tab>
+        <tab heading="Jeans"> -->
+            <!--Jeans-->
+            <h2>Jeans &gt;</h2>
+            <div class="sub-container" *ngFor="let m of storeJeans ">
+              <a routerLink="/mens/{{m._id}}">   
+                <img src="{{m.productImage}}" alt="Image" width="100%" height="200px">
+                    <div class="card-content">
+                      <div><b>{{m.name}}</b></div> 
+                    <div>Rs.{{m.price}}</div>
+                      <!-- <button class="btn btn-primary footer" (click)="addProductToCart(m._id)">Add to Cart</button> -->
+                    </div>
+              </a>
+              </div>
+          
+          <!-- </tab>
+      </tabset> -->
+</div>

@@ -1,0 +1,56 @@
+.container{
+    margin-top:70px;
+    width: 95%;
+    
+    
+}
+h2{
+    margin-left: 45px;
+}
+/* .panel{
+    width: 65%;
+}
+
+.panel-body{
+    float: left;
+    
+
+} */
+#userdata{
+    width:450px;
+}
+figure{
+    margin-bottom: 30px;
+}
+/* figure figcaption{
+    margin-right: 42%;
+} */
+.img{
+    background-size: cover;
+    
+}
+.delete{
+    margin-left: 50px;
+}
+#follo{
+    overflow: auto;
+}
+.search{
+    padding: 20px 20px 20px 20px;
+}
+figcaption{
+    text-align: center;
+}   
+#followercontainer{
+padding-top: 0px;
+margin-top:20px;
+position: relative;
+}
+.imagefollo{
+    
+    float: left;
+}
+.button{
+    float: left;
+}
+

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="sub-container">
+      <div class="card-content">
+        <figure *ngIf="storeProducts">
+            <img src="{{storeProducts.productImage}}" class=" img-rectangle" width="350px" height="400px" alt="Responsive image">
+            <!-- <figcaption>{{storeProducts.name}}</figcaption> -->
+        </figure>
+      <!-- <div *ngIf="isLogin"> <a routerLink='/cart'> <button class="btn btn-primary" (click)="addToCart()" >Add to Cart</button></a></div> -->
+      <!-- <div *ngIf="!isLogin"><button class="btn grey">Login First to Buy Product</button></div> -->
+        </div>
+      <div id="userdata" class="card-content">
+            <div *ngIf="storeProducts">
+                <div><h3><b>{{storeProducts.name}}</b></h3></div>
+                  <div>Rs.{{storeProducts.price}}</div>  
+            </div>
+            <div class="button">
+            <button type="button" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+            </div>
+      </div>
+    </div>
+  </div>

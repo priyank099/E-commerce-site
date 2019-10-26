@@ -1,0 +1,29 @@
+.container{
+    margin-top:50px;
+    width: 95%;
+    
+    
+}
+.sub-container{
+    margin:20px 20px 0px 20px;
+    width: 20%;
+    float: left;
+    
+    
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
